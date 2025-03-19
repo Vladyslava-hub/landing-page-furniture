@@ -1,0 +1,246 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-image: url(images/background1.png);
+  background-size: cover;
+  margin-bottom: 80px;
+}
+
+.header_content {
+  height: 100vh;
+  display: flex;
+}
+
+.header__title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 57px;
+  line-height: 60px;
+  letter-spacing: 1.2px;
+  text-align: left;
+  position: absolute;
+  top: 38%;
+  left: 20px;
+}
+
+.logo {
+  display: block;
+  width: 82px;
+  height: 29px;
+  top: 19px;
+  left: 16px;
+  padding: 20px;
+}
+
+.logo__image {
+  height: 100%;
+  width: 100%;
+}
+
+.nav__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav__item {
+  margin-left: 20px;
+}
+
+.nav__item_left {
+  margin-left: 850px;
+}
+
+.nav__link {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  height: 60px;
+
+  /* stylelint-disable-next-line font-family-name-quotes */
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  white-space: nowrap;
+  text-decoration: none;
+  text-transform: lowercase;
+  color: #000;
+
+  transition: color 0.3s;
+}
+
+.nav__link:hover {
+  color: #734909;
+}
+
+.nav__link.is-active {
+  color: #734909;
+}
+
+.nav__link.is-active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  height: 4px;
+  border-radius: 2px;
+  background-color: #734909;
+}
+
+.section1 {
+  display: grid;
+  grid-template-columns: 1fr 1.9fr;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 80px;
+  padding-right: 20px;
+}
+
+.text-top {
+  display: flex;
+  justify-content: center; /* Центрує по горизонталі */
+  align-items: center; /* Центрує по вертикалі */
+  height: 100vh;
+}
+
+.text-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Розподіляє текст по секції */
+  height: 100%;
+}
+
+.text-block h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+  letter-spacing: 1.2px;
+  padding: 20px;
+}
+
+.text-block a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.text-bottom {
+  font-size: 14px;
+  margin-top: auto;
+}
+
+.image-block img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.section2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Ліва картинка більша */
+  gap: 20px;
+  padding-left: 20px;
+  margin-bottom: 60px;
+}
+
+.image-item2 {
+  padding: 130px;
+  padding-left: 290px;
+}
+
+.image-item2 a {
+  margin-left: 350px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20.1px;
+  letter-spacing: 0%;
+  text-transform: lowercase;
+}
+
+.image-item p {
+  font-size: 14px;
+  margin-top: 10px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20.1px;
+  letter-spacing: 0%;
+  text-transform: lowercase;
+}
+
+.section3 {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 20px;
+  margin-bottom: 80px;
+  padding-right: 20px;
+
+  align-items: start;
+}
+
+.image-section3 {
+  padding-left: 20px;
+}
+
+.text-block-section3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Розташовує текст зверху, а кнопку внизу */
+  align-items: flex-start;
+  height: 100%; /* Розтягує блок на всю висоту */
+  padding-left: 120px;
+}
+
+.text-top-section3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+  letter-spacing: 1.2px;
+  margin: 0;
+  padding: 0;
+}
+
+.text-section3 {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.section6 {
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.product-list {
+  margin-bottom: 50px;
+}
+.product-list p {
+  margin: 5px 0;
+  font-size: 20px;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 59px;
+  line-height: 60px;
+  letter-spacing: 1.2px;
+  text-transform: lowercase;
+}
